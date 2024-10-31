@@ -1,0 +1,416 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Red Hat Display", sans-serif;
+    box-sizing: border-box;
+    /* outline: 2px solid red; */
+}
+
+/* Logo container */
+#logo{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+}
+
+/* Logo image */
+#logo img{
+    max-width: 100%;
+    height: auto;
+    max-height: 5vh;
+}
+
+/* Header container*/
+#header {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+    padding-top: 5%;
+}
+
+/* Left side of the header container*/
+ .left-content {
+    width: 30%;
+    position: relative;
+    right: 5%;
+    margin-right: 3%;
+} 
+
+/* Image in left content*/
+.left-content img {
+    max-width: 100%;
+}
+
+/* Center details in header container */
+#center-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Bold font property*/
+.red-hat-display-bold-font {
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: #28283D;
+  }
+  
+  /* Thin font property*/
+  .red-hat-display-thin-font {
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 18px;
+      text-align: center;
+      color: #87879D;
+      padding-top: 34px;
+    }
+  
+    /* Button property */
+    .red-hat-display-button-font {
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+      width: 193px;
+      height: 58px;
+      font-size: 16px;
+      line-height: 26px;
+      border-radius: 29px;
+      background-color: #4D96A9;
+      color: #ffffff;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Button hover property */
+    .red-hat-display-button-font:hover {
+        background-color: #71C0D4; 
+    }
+
+    /* Version number*/
+.version {
+    color: #8FE3F9;
+  }
+
+  /* Container for both buttons */
+  #buttonwrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 34px;
+  }
+
+  /* Targeting second button*/
+  #buttonwrapper button:nth-child(2){
+    background-color: #7b57a5;
+    width: 139px;
+  }
+  
+  /* Second button hover property */
+  #buttonwrapper button:nth-child(2):hover{
+    background-color: #B18BDD;
+    width: 139px;
+  }
+
+  /* Righit side of the header container*/
+  .right-content {
+    width: 30%;
+    /* position: relative; */
+    left: 5%;
+    margin-left: 3%;
+  }
+
+  /* Image in the right content*/
+  .right-content img {
+    max-width: 100%;
+}
+
+/* Division between header and content sections*/
+.divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    position: relative;
+}
+
+/* Line property for divider*/
+.line {
+    width: 1px; 
+    height: 45%; 
+    background-color: #FAFAFA; 
+    position: absolute;
+    top: 50%; 
+}
+
+/* Text in divider*/
+.divider p {
+        width: 50px; 
+        height: 50px; 
+        border: 1px solid #FAFAFA;
+        border-radius: 50%; 
+        padding: 1%;
+        text-align: center;
+        margin: 0;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        background-color: #ffffff;
+        position: absolute;
+        top: 90%;
+        z-index: 2;
+}
+
+/* Container for content section images */
+#images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 10%;
+}
+
+/* Content section images*/
+#images img {
+    max-width: 100%; 
+    width: 10%; 
+    margin: 2%;
+    flex-grow: 1;
+    border-radius: 10%;
+}
+
+/* First text in content section */
+#text h3 {
+    font-size: 16px;
+    letter-spacing: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+    color: #4D96A9;
+}
+
+/* Largest and second text in Content section*/
+#text h1 {
+    font-size: 40px;
+    line-height: 44px;
+}
+
+/* Division between content and footer section*/
+#second-divider p{
+    border: none;
+}
+
+/* Footer section*/
+#footer {
+    position: relative; 
+    background-color: #4D96A9; 
+    padding: 40px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    overflow: hidden; 
+}
+
+/* Bottom layer for footer section*/
+#footer::before {
+    content: '';
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-image: url('assets/desktop/image-footer.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.1; 
+    z-index: 1; 
+}
+
+/* Content for footer section*/
+#footer-content {
+    position: relative;
+    z-index: 2;
+    display: flex; 
+    flex: 1;
+    align-items: center;
+}
+
+/* Leftmost element in footer*/
+#footer-content h2 {
+    color: #ffffff;
+    margin-left: 5%; 
+    max-width: 300px;
+    text-align: left; 
+    flex: 1;
+}
+
+/* Center text in footer*/
+#footer-content p {
+    color: #ffffff;
+    text-align: left;
+    flex: 1; 
+    max-width: 300px; 
+    margin-left: 10%; 
+}
+
+/* Footer button*/
+#footer-content button {
+    background-color: #855FB1;
+    margin-left: 15%;
+}
+
+/* Footer button*/
+#footer-content button:hover {
+    background-color: #71C0D4;
+    margin-left: 15%;
+}
+
+
+
+
+/* Media Queries */
+
+
+/* Tablet */
+@media screen and (max-width:768px) {
+
+/* Header container*/
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+/* Left side of the header container*/
+.left-content {
+    width: 50%;
+    position: relative;
+    right: 20%;
+    margin-right: 10%;
+}  
+
+/* Image in left content*/
+ .left-content img {
+    max-width: 100%;
+} 
+
+/* Right side of the header container */
+.right-content {
+    width: 50%;
+    position: absolute;
+    left: 45%;
+    margin-left: 10%;
+}
+
+  /* Image in the right content*/
+  .right-content img {
+    max-width: 100%;
+} 
+
+    /* Bold font property*/
+.red-hat-display-bold-font {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  /* Thin font property*/
+.red-hat-display-thin-font {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+/* Center details in header container */
+#center-content {
+    width: 100%;
+    margin-top: 30%;
+}
+
+h1 {
+    width: 100%;
+    padding-top: 15%;
+}
+
+#center-content h5 {
+    width: 410px;
+    word-wrap: break-word;
+}
+
+/* Footer section*/
+#footer {
+    background-color: #4D96A9; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* Bottom layer for footer section*/
+/* #footer::before {
+    content: '';
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-image: url('assets/desktop/image-footer.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.1; 
+    z-index: 1; 
+} */
+
+/* Content for footer section*/
+#footer-content {
+    position: relative;
+    z-index: 2;
+    display: flex; 
+    flex: 1;
+    align-items: center;
+}
+
+/* Leftmost element in footer*/
+#footer-content h2 {
+    color: #ffffff;
+    margin-left: 5%; 
+    max-width: 300px;
+    text-align: left; 
+    flex: 1;
+}
+
+/* Center text in footer*/
+#footer-content p {
+    color: #ffffff;
+    text-align: left;
+    flex: 1; 
+    max-width: 300px; 
+    margin-left: 10%; 
+}
+
+/* Footer button*/
+#footer-content button {
+    background-color: #855FB1;
+    margin-left: 15%;
+}
+
+
+}
