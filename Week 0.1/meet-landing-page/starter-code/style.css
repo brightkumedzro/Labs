@@ -155,8 +155,9 @@
 /* Line property for divider*/
 .line {
     width: 1px; 
-    height: 45%; 
-    background-color: #FAFAFA; 
+    height: 40%; 
+    background-color: #87879D; 
+    opacity: 25%;
     position: absolute;
     top: 50%; 
 }
@@ -165,7 +166,7 @@
 .divider p {
         width: 50px; 
         height: 50px; 
-        border: 1px solid #FAFAFA;
+        border: 1px solid rgba(135, 135, 157, 0.25);
         border-radius: 50%; 
         padding: 1%;
         text-align: center;
